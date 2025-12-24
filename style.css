@@ -227,7 +227,7 @@ body {
 }
 
 .cake-gif {
-    width: 400px;
+    width: 200px;
     margin-top: 20px;
     max-width: 100%; /* Responsive */
 }
@@ -335,6 +335,7 @@ body {
         padding: 8px 15px;
     }
 }
+
 
 
 
