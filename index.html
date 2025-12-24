@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD BUNGAAAAA</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/flower.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <audio class="audio" src="images/hbd (1).mp3" autoplay loop>
+        Browser Anda tidak mendukung pemutaran audio.
+    </audio>
+    
+    <!-- Confetti Canvas for Effects -->
+    <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+    
+    <div class="open">
+        <div class="card">
+            <h2>Ehhh ada surat nih broo</h2>
+            <img onclick="mulai()" src="images/mail.png" alt="Gambar surat">
+            <h3>Di klik yaa suratnya</h3>
+        </div>
+    </div>
+
+    <div class="atas" id="atas">
+        <img onclick="mulai()" src="images/ultah.png" alt="Gambar ucapan ulang tahun">
+        <h2>Scroll ke bawah yaa.. &#10083</h2>
+    </div>
+
+    <div class="content">
+        <p class="kartu-ucapan" data-aos="fade-right" data-aos-delay="100">
+            &#127881 HAPPY BIRTHDAY BUNGA FEBRIANA &#127881
+            <img class="foto" src="images/bunga.jpeg" alt="Foto Elvira">
+        </p>
+        <p class="kartu-ucapan typing" data-aos="fade-left" data-aos-delay="200">
+            Sebelumnya gw mau ngucapin makasih udah jadi teman yang baik buat gw, dan makasih juga udah mau temenan sama gw &#10084
+        </p>
+        <p class="kartu-ucapan" data-aos="fade-right" data-aos-delay="300">Semoga lu bahagia selalu &#10084</p>
+        <p class="kartu-ucapan" data-aos="fade-left" data-aos-delay="400">Selalu dikelilingi orang yang baik-baik &#10084</p>
+        <p class="kartu-ucapan" data-aos="fade-right" data-aos-delay="500">Dijauhi dari hal-hal yang buruk &#10084</p>
+        <p class="kartu-ucapan" data-aos="fade-left" data-aos-delay="600">Semoga lulus tepat waktu dan dapet kerjaan yang lu inginkan &#10084 </p>
+        <p class="kartu-ucapan" data-aos="fade-right" data-aos-delay="700">Oiyaa kelupaan semoga sehat selalu &#10084</p>
+        <p class="kartu-ucapan" data-aos="fade-left" data-aos-delay="800">Aamiin &#10084</p>
+        
+        <!-- Interactive Button -->
+        <button class="surprise-btn" onclick="showSurprise()">Klik untuk Surprise!</button>
+        <div class="surprise" id="surprise">
+            <p>🎉 HIYYAAAH 🎂</p>
+            <img src="images/hiyaaa.png" alt="hiyaaa" class="cake-gif">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
