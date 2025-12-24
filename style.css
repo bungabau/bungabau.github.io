@@ -328,12 +328,13 @@ body {
         padding: 8px;
     }
     .cake-gif {
-        width: 100px;
+        width: 50%;
     }
     .surprise-btn {
         font-size: 0.8em;
         padding: 8px 15px;
     }
 }
+
 
 
