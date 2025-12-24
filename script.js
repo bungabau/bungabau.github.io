@@ -11,8 +11,14 @@ if (musik) {
 // Confetti Effect
 const canvas = document.getElementById('confetti-canvas');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+resizeCanvas(); // Initial resize
+window.addEventListener('resize', resizeCanvas); // Resize on window change
 
 let confetti = [];
 
