@@ -227,7 +227,7 @@ body {
 }
 
 .cake-gif {
-    width: 200px;
+    width: 400px;
     margin-top: 20px;
     max-width: 100%; /* Responsive */
 }
@@ -328,7 +328,7 @@ body {
         padding: 8px;
     }
     .cake-gif {
-        width: 50%;
+        width: 100px;
     }
     .surprise-btn {
         font-size: 0.8em;
