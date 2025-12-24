@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: rgb(56, 56, 56);
+    min-height: 100vh; /* Ensure full height on mobile */
 }
 
 @keyframes gradientShift {
@@ -55,8 +56,9 @@ body {
     margin-bottom: 20px;
     color: rgb(56, 56, 56);
     text-align: center;
-    max-width: 600px;
+    max-width: 90vw; /* Responsive width */
     font-weight: 600;
+    font-size: 1.5em; /* Base size */
 }
 
 .open .card {
@@ -67,6 +69,8 @@ body {
     text-align: center;
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease;
+    width: 90%; /* Responsive width */
+    max-width: 400px;
 }
 
 .open .card:hover {
@@ -76,6 +80,7 @@ body {
 .open .card h3 {
     margin-top: 20px;
     font-weight: 400;
+    font-size: 1em;
 }
 
 .open .card img {
@@ -107,6 +112,8 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
     backdrop-filter: blur(10px);
+    width: 80%; /* Responsive */
+    max-width: 300px;
 }
 
 .atas img:hover {
@@ -121,6 +128,8 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     animation: bounce 2s infinite;
+    width: 90%; /* Responsive */
+    max-width: 500px;
 }
 
 @keyframes bounce {
@@ -131,6 +140,9 @@ body {
 
 .content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kartu-ucapan {
@@ -159,6 +171,7 @@ body {
     max-width: 400px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .typing {
@@ -191,6 +204,8 @@ body {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    width: 80%; /* Responsive */
+    max-width: 300px;
 }
 
 .surprise-btn:hover {
@@ -208,68 +223,115 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     max-width: 600px;
     backdrop-filter: blur(10px);
+    width: 90%;
 }
 
 .cake-gif {
     width: 200px;
     margin-top: 20px;
+    max-width: 100%; /* Responsive */
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .atas img, .atas h2, .kartu-ucapan {
-        width: 100%;
-        margin: 10px 0;
-        font-size: 1.2em;
+/* Media Queries for Better Responsiveness */
+@media (max-width: 1024px) {
+    .atas img {
+        height: 180px;
+        width: 70%;
     }
+    .atas h2 {
+        font-size: 1.4em;
+    }
+    .kartu-ucapan {
+        font-size: 1.1em;
+        padding: 18px;
+    }
+    .cake-gif {
+        width: 180px;
+    }
+}
 
+@media (max-width: 768px) {
     .atas img {
         height: 150px;
+        width: 80%;
     }
-
-    .kartu-ucapan {
+    .atas h2 {
+        font-size: 1.3em;
         padding: 15px;
-        font-size: 1em;
     }
-
+    .kartu-ucapan {
+        font-size: 1em;
+        padding: 15px;
+        margin: 15px auto;
+    }
     .open .card img {
         height: 80px;
     }
-
     .open .card h3 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
-
     .cake-gif {
         width: 150px;
+    }
+    .surprise-btn {
+        font-size: 1em;
+        padding: 12px 25px;
     }
 }
 
 @media (max-width: 480px) {
-    .atas img, .atas h2, .kartu-ucapan {
-        width: 100%;
-        margin: 5px 0;
-        font-size: 1em;
-    }
-
     .atas img {
         height: 120px;
+        width: 90%;
+        padding: 15px;
     }
-
-    .kartu-ucapan {
+    .atas h2 {
+        font-size: 1.1em;
         padding: 10px;
-        font-size: 0.9em;
     }
-
+    .kartu-ucapan {
+        font-size: 0.9em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .open .card {
+        padding: 20px;
+    }
     .open .card img {
         height: 60px;
     }
-
     .open .card h3 {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
-
     .cake-gif {
         width: 120px;
+    }
+    .surprise-btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        width: 90%;
+    }
+    .typing {
+        animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite; /* Faster typing on small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .atas img {
+        height: 100px;
+    }
+    .atas h2 {
+        font-size: 1em;
+    }
+    .kartu-ucapan {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+    .cake-gif {
+        width: 100px;
+    }
+    .surprise-btn {
+        font-size: 0.8em;
+        padding: 8px 15px;
     }
 }
